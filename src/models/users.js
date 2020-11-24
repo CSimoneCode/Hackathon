@@ -1,58 +1,31 @@
+import axios from 'axios';
 const url = `http://localhost:4000/bevbuddies/users/`
 
 class UserModel {
-  static all() {
-    return fetch(url)
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in UserModel.all: ', err);
-        return { users: []};
-      })
+  static all = () => {
+    let request = axios.get(url);
+    return request;
   };
-  
-  static getOne(id) {
-    return fetch(`${url}/${id}`)
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in UserModel.getOne: ', err);
-      })
+
+  static getOne = (id) => {
+    let request = axios.get(`${url}/${id}`);
+    return request;
   };
-  
-  static create(userData) {
-    return fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(userData)
-    })
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in UserModel.create: ', err);
-      })
-  }
 
-  static delete(id) {
-    return fetch(`${url}/${id}`, {method:"delete"})
-    .then(res => res.json())
-    .catch((err) => {
-      console.log('Error fetching data in UserModel.delete: ', err);
-    })
-  }
+  static create = (user) => {
+    let request = axios.post(url, user);
+    return request;
+  };
 
-  static update(user) {
-    return fetch(`${url}/${user._id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(user)
-    })
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in UserModel.update: ', err);
-      })
-  }
+  static delete = (user) => {
+    let request = axios.delete(`${url}/${user._id}`);
+    return request;
+  };
+
+  static update = (user) => {
+    let request = axios.put(`${url}/${user._id}`, user);
+    return request;
+  };
 };
 
 export default UserModel
