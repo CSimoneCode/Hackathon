@@ -1,5 +1,4 @@
 import React from 'react';
-import SponsoredContent from '../components/SponsoredContent';
 import UpcomingEvents from '../components/UpcomingEvents';
 
 const HomePage = (props) => {
@@ -7,7 +6,6 @@ const HomePage = (props) => {
     <>
       <h1>Home Page</h1>
       <UpcomingEvents />
-      <SponsoredContent />
     </>
   )
 }

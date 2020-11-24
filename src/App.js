@@ -7,6 +7,7 @@ import RegisterPage from './pages/RegisterPage';
 import NewEvent from './pages/NewEventPage';
 import VendorList from './pages/VendorList';
 import DrinkList from './pages/DrinkList';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/vendors" component={VendorList} />
         <Route path="/drinks" component={DrinkList} />
       </Switch>
+      {/* <Footer /> */}
     </div>
   );
 }
