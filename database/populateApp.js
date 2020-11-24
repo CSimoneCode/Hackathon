@@ -1,16 +1,39 @@
 const mongoose = require('mongoose');
 
+const connectionString =
+process.env.MONGODB_URI || "mongodb://localhost:27017/drinks_with_friends";
+
+const configOptions = {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+};
+
+mongoose
+.connect(connectionString, configOptions)
+.then(() => console.log("MongoDB Successfully connected"))
+.catch((err) => console.log(`MonngoDB connection err: ${err}`))
+
+
+module.exports = {
+  User: require('./models/User'),
+  Drink: require('./models/Drink'),
+  Event: require('./models/Event'),
+  Vendor: require('./models/Vendor')
+};
+
 const User = require('./models/User');
-const userArr = require('./userData.json');
+const userArr = require('./userData');
 
 const Vendor = require('./models/Vendor');
-const vendorArr = require('./vendorData.json');
+const vendorArr = require('./vendorData');
 
 const Drink = require('./models/Drink');
-const drinkArr = require('./drinkData.json');
+const drinkArr = require('./drinkData');
 
 const Event = require('./models/Event');
-const eventArr = require('./eventData.json'); 
+const eventArr = require('./eventData'); 
 
 
 // User.collection.insertMany(userArr, (err, userArr) => {
@@ -22,11 +45,20 @@ const eventArr = require('./eventData.json');
 //   process.exit();
 // }); 
 
-Vendor.collection.insertMany(vendorArr, (err, vendorArr) => {
+// Vendor.collection.insertMany(vendorArr, (err, vendorArr) => {
+//   if (err){
+//     console.log(`error adding vendors: ${err}`);
+//   } else {
+//     console.log(vendorArr);
+//   }
+//   process.exit()
+// });
+
+Drink.collection.insertMany(drinkArr, (err, drinkArr) => {
   if (err){
     console.log(`error adding vendors: ${err}`);
   } else {
-    console.log(vendorArr);
+    console.log(drinkArr);
   }
   process.exit()
 });
