@@ -8,6 +8,8 @@ const EventSchema = new Schema({
     ref: 'User'
   }],
   description: {type: String, required: true},
+  date: String,
+  time: String,
   ageRestriction: {type: Boolean, required: true},
 }, {timestamps: true});
 

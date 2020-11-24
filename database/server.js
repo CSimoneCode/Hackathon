@@ -16,10 +16,14 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // middle 
+<<<<<<< HEAD
+app.use("/BevBuddies/", routes.games);
+=======
 app.use("/bevbuddies/users", routes.users);
 app.use("/bevbuddies/events", routes.events);
 app.use("/bevbuddies/vendors", routes.vendors);
 app.use("/bevbuddies/drinks", routes.drinks);
+>>>>>>> master
 
 
 

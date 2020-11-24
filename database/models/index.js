@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const connectionString =
-process.env.MONGODB_URI || "mongodb://localhost:27017/drinks_with_friends";
+process.env.MONGODB_URI || "mongodb://localhost:27017/BevBuddies";
 
 const configOptions = {
   useNewUrlParser: true,
