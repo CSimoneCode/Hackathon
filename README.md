@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# BevBuddies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2020 has certainly been a doozy of a year. Looking back, we thought about the things we wish we had been able to do and the tools we wish we had had at our disposal, to weather this stormy year. 
+With all the Netflix parties, evenings of online game nights, and Zoom happy hours and book clubs this year, we realized that we really would have loved the idea to share drinks with our friends. It would have been amazing to have a signature cocktail to go with the theme of that Netflix movie EVERYONE was talking about! It could have been a lot of fun to have a themed drink to go along with the book of the month in our virtual book club. 
+That's a service we could really get in to!
+Currently only available in the Bay Area, with investor funding we plan to scale to include all urban areas (within legal limitations) across the US!
 
-## Available Scripts
+## User Stories
+- The user creates and account via sign up the first time they use the app
+- Users can create an event and invite friends to join them at the linked platform
+- Every attendee and the host have their own accounts with all relevent information
+- Each user has their address saved to their account and the event host can send them a beverage without ever seeing their personal information
+- Payment is processed via PayPal 
+- Vendors have a list of available drinks to choose from, including both alcoholic and non-alcoholic beverages
+- Events can be open to all ages or restricted to participants that are 21+ only
+- Id is verified upon delivery
+-
 
-In the project directory, you can run:
+## Technologies Used
+MERN stack
+Figma
+Github project management tools
+PayPal SDK
+Scandit SDK
 
-### `yarn start`
+## Wireframes 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Thank you!
+For reading to our documentation, we appreciate your consideration. This project was built and designed by:
 
-### `yarn test`
+Kihwan Lee - Software Developer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sophie Lindheimer - UX/UI Designer
 
-### `yarn build`
+Simone Poe - Software Developer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Josh Sanford - Software Developer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Nathan Tufts-Brown - UX/UI Designer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Morgan Young - UX/UI Designer
