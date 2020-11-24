@@ -1,6 +1,6 @@
 const events = [{
         name: "Graduation Party",
-        members: [],
+        members: [], // Will be populated with user IDs
         description: "Celebrate Sally finishing school with drinks and online games!",
         ageRestriction: false,
     },
