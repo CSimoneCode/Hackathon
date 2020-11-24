@@ -12,10 +12,9 @@ class NewEvent extends React.Component {
     time: '',
     ageRestriction: true,
   }
-  
+
 
   removeItem = () => {
-
   }
 
 
