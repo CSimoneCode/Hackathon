@@ -6,7 +6,7 @@ const DrinkCard = (props) => {
       <h1>{props.drink.name}</h1>
       <p>{props.drink.ingredients}</p>
       <div className="priceTag">{props.drink.price}</div>
-      {props.drink.alcoholic && <i class="fas fa-cocktail"></i>}
+      {props.drink.alcoholic && <i className="fas fa-cocktail"></i>}
     </div>
   )
 }
