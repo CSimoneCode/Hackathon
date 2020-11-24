@@ -7,9 +7,11 @@ class VendorList extends React.Component {
     vendors: [],
   }
 
+  
   componentDidMount() {
     this.fetchData();
   };
+
 
   fetchData = () => {
     VendorModel.all().then((res) => {
@@ -18,8 +20,6 @@ class VendorList extends React.Component {
       });
     });
   };
-
-  
   
   
   render() {
