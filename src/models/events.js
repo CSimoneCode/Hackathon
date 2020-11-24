@@ -1,58 +1,31 @@
+import axios from 'axios';
 const url = `http://localhost:4000/bevbuddies/events/`
 
 class EventModel {
-  static all() {
-    return fetch(url)
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in EventModel.all: ', err);
-        return { events: []};
-      })
+  static all = () => {
+    let request = axios.get(url);
+    return request;
   };
-  
-  static getOne(id) {
-    return fetch(`${url}/${id}`)
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in EventModel.getOne: ', err);
-      })
+
+  static getOne = (id) => {
+    let request = axios.get(`${url}/${id}`);
+    return request;
   };
-  
-  static create(eventData) {
-    return fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(eventData)
-    })
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in EventModel.create: ', err);
-      })
-  }
 
-  static delete(id) {
-    return fetch(`${url}/${id}`, {method:"delete"})
-    .then(res => res.json())
-    .catch((err) => {
-      console.log('Error fetching data in EventModel.delete: ', err);
-    })
-  }
+  static create = (event) => {
+    let request = axios.post(url, event);
+    return request;
+  };
 
-  static update(event) {
-    return fetch(`${url}/${event._id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(event)
-    })
-      .then(res => res.json())
-      .catch((err) => {
-        console.log('Error fetching data in EventModel.update: ', err);
-      })
-  }
+  static delete = (event) => {
+    let request = axios.delete(`${url}/${event._id}`);
+    return request;
+  };
+
+  static update = (event) => {
+    let request = axios.put(`${url}/${event._id}`, user);
+    return request;
+  };
 };
 
 export default EventModel
