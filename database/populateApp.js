@@ -11,4 +11,14 @@ const drinkArr = require('./drinkData.json');
 
 const Event = require('./models/Event');
 const eventArr = require('./eventData.json'); 
+
+
+User.collection.insertMany(userArr, (err, userArr) => {
+  if (err){
+    console.log(`error adding users: ${err}`);
+  } else {
+    console.log(userArr);
+  }
+  process.exit();
+});
   
