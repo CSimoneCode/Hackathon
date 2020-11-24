@@ -46,7 +46,7 @@ const eventArr = require('./eventData');
 //   } else {
 //     console.log(userArr);
 //   }
-//   process.exit();
+//   // process.exit();
 // }); 
 
 // Vendor.collection.insertMany(vendorArr, (err, vendorArr) => {
@@ -55,7 +55,7 @@ const eventArr = require('./eventData');
 //   } else {
 //     console.log(vendorArr);
 //   }
-//   process.exit()
+// //   process.exit()
 // });
 
 // Drink.collection.insertMany(drinkArr, (err, drinkArr) => {
@@ -64,7 +64,7 @@ const eventArr = require('./eventData');
 //   } else {
 //     console.log(drinkArr);
 //   }
-//   process.exit()
+// //   process.exit()
 // });
 
 // Event.collection.insertMany(eventArr, (err, eventArr) => {
@@ -73,5 +73,6 @@ const eventArr = require('./eventData');
 //   } else {
 //     console.log(eventArr);
 //   }
-//   process.exit()
-// });
+// //   process.exit()
+// });   
+  

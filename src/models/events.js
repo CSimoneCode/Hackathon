@@ -24,3 +24,4 @@ class EventModel {
 };
 
 export default EventModel;
+
