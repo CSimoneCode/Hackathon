@@ -1,5 +1,5 @@
 import React from 'react';
-import EventModel from '../models/event'
+import EventModel from '../models/events'
 
 class NewEvent extends React.Component {
   state = {

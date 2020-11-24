@@ -21,11 +21,6 @@ class EventModel {
     let request = axios.delete(`${url}/${event._id}`);
     return request;
   };
-
-  static update = (event) => {
-    let request = axios.put(`${url}/${event._id}`, user);
-    return request;
-  };
 };
 
-export default EventModel
+export default EventModel;
