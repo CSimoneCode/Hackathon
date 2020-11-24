@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI, {
+const connectionString =
+process.env.MONGODB_URI || "mongodb://localhost:27017/drinks_with_friends";
+
+const configOptions = {
   useNewUrlParser: true,
   useFindAndModify: false,
   useCreateIndex: true,
   useUnifiedTopology: true,
-});
+};
 
-mongoose.connection.on('connected', () => {
-  console.log('MongoDB connected successfully...');
-});
-
-mongoose.connection.on('error', (err) => {
-  console.log(err);
-});
+mongoose
+.connect(connectionString, configOptions)
+.then(() => console.log("MongoDB Successfully connected"))
+.catch((err) => console.log(`MonngoDB connection err: ${err}`))
 
 
 module.exports = {

@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "username": "sassy_sally",
+      "password": "12345",
+      "name": "Sally Jones",
+      "drinkingAge": true,
+      "homeAddress": "216 Makin Rd Oakland, CA, 94603",
+      "email": "sallyj@gmail.com",
+      "phone": 5105625334
+    },
+    {
+      "username": "djackson",
+      "password": "12345",
+      "name": "Daniel Jackson",
+      "drinkingAge": true,
+      "homeAddress": "216 Makin Rd Oakland, CA, 94603",
+      "email": "daniel_jackson@yahoo.com",
+      "phone": 5105625334
+    },
+    {
+      "username": "Carl75",
+      "password": 12345,
+      "name": "Karl Fish",
+      "drinkingAge": false,
+      "homeAddress": "216 Makin Rd Oakland, CA, 94603",
+      "email": "Karl.fish@outlook.com",
+      "phone": 5105625334
+    },
+    {
+      "username": "BobbyD",
+      "password": 12345,
+      "name": "Robert Smith",
+      "drinkingAge": true,
+      "homeAddress": "216 Makin Rd Oakland, CA, 94603",
+      "email": "rsmith@gmail.com",
+      "phone": 5105625334
+    },
+    {
+      "username": "Mirnavator",
+      "password": 12345,
+      "name": "Mirna Valerio",
+      "drinkingAge": false,
+      "homeAddress": "216 Makin Rd Oakland, CA, 94603",
+      "email": "mirna_valerio@gmail.com",
+      "phone": 5105625334
+    },
+    {
+      "username": "Skywalker1",
+      "password": 12345,
+      "name": "Anakin Skywalker",
+      "drinkingAge": false,
+      "homeAddress": "216 Makin Rd Oakland, CA, 94603",
+      "email": "anakinskywalker@gmail.com",
+      "phone": 5105625334
+    }
+  ]
+}
