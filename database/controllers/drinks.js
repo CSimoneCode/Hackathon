@@ -3,7 +3,7 @@ const db = require("../models");
 const index = (req, res) => {
   db.Drink.find({})
   .then((foundDrinks) => {
-    res.json({drinkss: foundDrinks });
+    res.json({drinks: foundDrinks });
   });
 
   console.log('underneath database query');
