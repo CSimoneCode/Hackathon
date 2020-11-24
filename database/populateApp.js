@@ -13,12 +13,21 @@ const Event = require('./models/Event');
 const eventArr = require('./eventData.json'); 
 
 
-User.collection.insertMany(userArr, (err, userArr) => {
+// User.collection.insertMany(userArr, (err, userArr) => {
+//   if (err){
+//     console.log(`error adding users: ${err}`);
+//   } else {
+//     console.log(userArr);
+//   }
+//   process.exit();
+// }); 
+
+Vendor.collection.insertMany(vendorArr, (err, vendorArr) => {
   if (err){
-    console.log(`error adding users: ${err}`);
+    console.log(`error adding vendors: ${err}`);
   } else {
-    console.log(userArr);
+    console.log(vendorArr);
   }
-  process.exit();
+  process.exit()
 });
-  
+    
