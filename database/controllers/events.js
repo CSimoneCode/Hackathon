@@ -1,4 +1,4 @@
-const db = require("../models/Event");
+const db = require("../models");
 
 const index = (req, res) => {
   db.Event.find({})
