@@ -1,3 +1,7 @@
+// Run these in the terminal after installing mongodb, mongoose, and express 
+// Uncomment one model command at at time and commit after each model is added to the db in case you run into any snags
+// for example, uncomment the section beginning with User, save this file, then run "node populateApp.js" in the terminal
+
 const mongoose = require('mongoose');
 
 const connectionString =
@@ -54,12 +58,21 @@ const eventArr = require('./eventData');
 //   process.exit()
 // });
 
-Drink.collection.insertMany(drinkArr, (err, drinkArr) => {
-  if (err){
-    console.log(`error adding vendors: ${err}`);
-  } else {
-    console.log(drinkArr);
-  }
-  process.exit()
-});
+// Drink.collection.insertMany(drinkArr, (err, drinkArr) => {
+//   if (err){
+//     console.log(`error adding vendors: ${err}`);
+//   } else {
+//     console.log(drinkArr);
+//   }
+//   process.exit()
+// });
+
+// Event.collection.insertMany(eventArr, (err, eventArr) => {
+//   if (err){
+//     console.log(`error adding vendors: ${err}`);
+//   } else {
+//     console.log(eventArr);
+//   }
+//   process.exit()
+// });
     
