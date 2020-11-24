@@ -7,8 +7,8 @@ const Navbar = (props) => {
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/events/new">New Event</a></li>
-        <li><a href="/">Login</a></li>
-        <li><a href="/">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
       </ul>
     </nav>
   )

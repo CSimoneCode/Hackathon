@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import NewEvent from './pages/NewEventPage';
 import VendorList from './pages/VendorList';
+import DrinkList from './pages/DrinkList';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" component={RegisterPage} />
         <Route path="/events/new" component={NewEvent} />
         <Route path="/vendors" component={VendorList} />
+        <Route path="/drinks" component={DrinkList} />
       </Switch>
     </div>
   );
