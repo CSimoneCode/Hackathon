@@ -19,7 +19,7 @@ function App() {
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegisterPage} />
         <Route path="/events/new" component={NewEvent} />
-        <Route path="/events/rsvp" component={RsvpPage} />
+        <Route path="/events/:id/rsvp" component={RsvpPage} />
         <Route path="/vendors" component={VendorList} />
         <Route path="/drinks" component={DrinkList} />
       </Switch>
