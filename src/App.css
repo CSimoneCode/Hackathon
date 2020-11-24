@@ -37,6 +37,13 @@
   }
 }
 
+.rsvpContainer {
+  width: 40%;
+  padding-top: 2em; 
+  padding-left: 2em;
+  background: #DED3FF;
+  border-radius: 10%;
+}
 .navbar {
   position: relative;
   background: #251455;
