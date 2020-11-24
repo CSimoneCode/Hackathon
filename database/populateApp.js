@@ -75,4 +75,3 @@ const eventArr = require('./eventData');
 //   }
 //   process.exit()
 // });
-    

@@ -1,4 +1,4 @@
-const db = require("../models/User");
+const db = require("../models");
 
 const index = (req, res) => {
   db.User.find({})
