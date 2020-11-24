@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import image from '../images/cantina.jpg'
 
-function EventCard(props) {
+function EventCard() {
   return (
     <li className="eventCard">
         <img
@@ -28,4 +28,4 @@ function EventCard(props) {
 }   
 
 export default EventCard;     
-    
+  

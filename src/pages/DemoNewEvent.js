@@ -1,6 +1,5 @@
 import React from 'react';
-import EventModel from '../models/event';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class NewEvent extends React.Component {
   state = {

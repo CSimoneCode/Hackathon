@@ -23,7 +23,7 @@ class EventModel {
   };
 
   static update = (event) => {
-    let request = axios.put(`${url}/${event._id}`, user);
+    let request = axios.put(`${url}/${event._id}`);
     return request;
   };
 };
