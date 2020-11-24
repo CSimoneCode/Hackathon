@@ -11,8 +11,8 @@ const corsOptions = {
 // middleware - JSON parsing
 app.use(express.json());
 
-// middle - Routes - Simone! 
-app.use("/api/v1/games", routes.games);
+// middle 
+app.use("/drinks_with_friends/", routes.games);
 
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
