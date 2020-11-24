@@ -12,7 +12,10 @@ const corsOptions = {
 app.use(express.json());
 
 // middle 
-app.use("/drinks_with_friends/", routes.games);
+app.use("/bevbuddies/users", routes.users);
+app.use("/bevbuddies/events", routes.events);
+app.use("/bevbuddies/vendors", routes.vendors);
+app.use("/bevbuddies/drinks", routes.drinks);
 
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
