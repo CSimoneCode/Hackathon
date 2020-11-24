@@ -44,3 +44,19 @@
   background: #DED3FF;
   border-radius: 10%;
 }
+.navbar {
+  position: relative;
+  background: #251455;
+}
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  top: 5px;
+  display: block;
+}
+
+.vendorCard {
+  width: 747px;
+  height: 362px;
+}
