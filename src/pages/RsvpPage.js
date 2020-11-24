@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, Redirect} from 'react-router-dom';
+import DrinkCard from '../components/DemoDrinkCard';
 // import Drink from '../models/drinks'
 // import DrinkCard from '../components/DrinkCard';
 
@@ -31,6 +32,7 @@ class RsvpPage extends React.Component {
     return(
       <div>
 
+
         <div className="rsvpContainer">
           <div className="row">
             <h2>Patty invited you to </h2>
@@ -42,6 +44,9 @@ class RsvpPage extends React.Component {
             <button>I'll be there!</button>
             <button>Can't make it...</button>
           </div>
+        </div>
+        <div>
+          <DrinkCard />
         </div>
         
         <div className="container-fluid">
